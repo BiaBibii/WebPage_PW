@@ -16,15 +16,11 @@ h1{
 div.row{
 	background: white;
 }
-.navbar {
-
-}
 .navbar-inverse{
 	background-color: #174F09;
 	font-color:#A5FDA0;
 }
 .navbar-brand{
-
 	float: left;
     height: 50px;
     padding: 15px 15px;
@@ -38,7 +34,7 @@ div.row{
 }
 ul{
 	list-style-type: none;
-
+	overflow:hidden;
 }
 li{
 	display: inline;
