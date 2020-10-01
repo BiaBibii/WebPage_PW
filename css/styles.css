@@ -9,13 +9,14 @@ div#app-container {
 	font-family: Georgia;
 	width: 1550px;
 }
-}
+
 h1{
 	color:#2A9510;
 }
 div.row{
 	background: white;
 }
+
 .navbar-inverse{
 	background-color: #174F09;
 	font-color:#A5FDA0;
@@ -29,19 +30,7 @@ div.row{
     width: 100px;
 
 }
-.navbar-nav{
-	display: inline-block;
-}
-ul{
-	list-style-type: none;
-	overflow:hidden;
-}
-li{
-	display: inline;
-	padding-right: 50px;
-	padding-left: 50px;
-	justify-content: center; 
-}
+
 div.col {
   background: #D8FDA0;
 }
@@ -57,6 +46,14 @@ div.card img {
   margin: 0 auto;
   padding: 10px;
 }
+li{
+	display: inline;
+	padding-right: 5px;
+	padding-left: 5px;
+	justify-content: center;
+}
+
+
 ::webkit-scrollbar{
     width:10px;
 }
