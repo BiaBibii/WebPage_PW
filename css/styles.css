@@ -46,3 +46,34 @@ li{
 	padding-left: 50px;
 	justify-content: center; 
 }
+div.col {
+  background: #D8FDA0;
+}
+div#produse {
+  padding: 10px;
+}
+div.card {
+  margin-bottom: 20px;
+  text-align: center;
+  background: white;
+}
+div.card img {
+  margin: 0 auto;
+  padding: 10px;
+}
+::webkit-scrollbar{
+    width:10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
