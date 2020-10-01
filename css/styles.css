@@ -1,15 +1,48 @@
 body{
 	background: #A5FDA0;
 }
+
 div#app-container {
 	background: #D8FDA0;
 	min-height: 500px;
 	margin-top: 10px;
-
+	font-family: Georgia;
+	width: 1550px;
+}
 }
 h1{
 	color:#2A9510;
 }
 div.row{
 	background: white;
+}
+.navbar {
+
+}
+.navbar-inverse{
+	background-color: #174F09;
+	font-color:#A5FDA0;
+}
+.navbar-brand{
+
+	float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 54px;
+    line-height: 20px;
+    width: 100px;
+
+}
+.navbar-nav{
+	display: inline-block;
+}
+ul{
+	list-style-type: none;
+
+}
+li{
+	display: inline;
+	padding-right: 50px;
+	padding-left: 50px;
+	justify-content: center; 
 }
