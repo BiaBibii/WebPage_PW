@@ -25,16 +25,19 @@ div.row{
 	float: left;
     height: 50px;
     padding: 15px 15px;
-    font-size: 54px;
+    font-size: 44px;
     line-height: 20px;
     width: 100px;
 
+}
+nav.navbar a.navbar-brand{
+    width:310px;
 }
 
 div.col {
   background: #D8FDA0;
 }
-div#produse {
+div#produse{
   padding: 10px;
 }
 div.card {
