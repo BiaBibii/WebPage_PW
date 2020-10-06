@@ -58,7 +58,7 @@
     <div id="produse" class="container">
         <div class="row">
             <div class="col">
-                 <div class="card">
+                 <div class="produs" data-cod-produs="1">
                      <img src="images/castravete.jpg" alt="castraveti" style="width:70%">
                      <h4>Castraveți Cornichon</h4>
                      <p class="Preț">3 lei/kg</p>
@@ -66,7 +66,7 @@
                  </div>
             </div>
             <div class="col">
-                <div class="card">
+                <div class="produs" data-cod-produs="2">
                      <img src="images/rosii.jpg" alt="rosii" style="width:70%">
                      <h4>Roșii</h4>
                      <p class="Preț">5 lei/kg</p>
@@ -74,7 +74,7 @@
                  </div>
              </div>
             <div class="col">
-                <div class="card">
+                <div class="produs" data-cod-produs="3">
                      <img src="images/conopida.jpg" alt="conopida" style="width:70%">
                      <h4>Conopidă</h4>
                      <p class="Preț">10 lei/kg</p>
@@ -85,7 +85,7 @@
 
         <div class="row">
             <div class="col">
-                <div class="card">
+                <div class="produs" data-cod-produs="4">
                     <img src="images/usturoi.jpg" alt="usturoi" style="width:70%">
                     <h4>Usturoi</h4>
                     <p class="Preț">18 lei/kg</p>
@@ -93,7 +93,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card">
+                <div class="produs" data-cod-produs="5">
                     <img src="images/cartofi.jpg" alt="castraveti" style="width:70%">
                     <h4>Cartofi albi</h4>
                     <p class="Preț">2.5 lei/kg</p>
@@ -101,7 +101,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card">
+                <div class="produs" data-cod-produs="6">
                     <img src="images/ardei_iute.jpg" alt="castraveti" style="width:70%">
                     <h4>Ardei iute</h4>
                     <p class="Preț">8 lei/kg</p>
@@ -112,7 +112,7 @@
 
         <div class="row">
             <div class="col">
-                <div class="card">
+                <div class="produs" data-cod-produs="7">
                     <img src="images/ceapa_rosie.jpg" alt="ceapa_rosie" style="width:70%">
                     <h4>Ceapa rosie</h4>
                     <p class="Preț">7 lei/kg</p>
@@ -120,7 +120,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card">
+                <div class="produs" data-cod-produs="8">
                     <img src="images/mere.jpg" alt="mere" style="width:70%">
                     <h4>Mere roșii</h4>
                     <p class="Preț">2.5 lei/kg</p>
@@ -128,7 +128,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card">
+                <div class="produs" data-cod-produs="9">
                     <img src="images/patrunjel.jpg" alt="patrunjel" style="width:70%">
                     <h4>Pătrunjel</h4>
                     <p class="Preț">2 lei/legătura</p>
@@ -139,7 +139,7 @@
 
         <div class="row">
             <div class="col">
-                <div class="card">
+                <div class="produs" data-cod-produs="1">
                     <img src="images/caise.jpg" alt="caise" style="width:70%">
                     <h4>Caise</h4>
                     <p class="Preț">6 lei/kg</p>
@@ -157,9 +157,21 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
 		$(document).ready(function(){
-		alert("helllo");
+		//alert("dsfg");
+		var produse_in_cos=[];
+
+		    $("button.addToCart").on("click",function(){
+		    	var selected=$(this).parent().parent().attr("data-cod-produs");
+		    	produse_in_cos.push(selected);//adaug produsele in lista pentru cos
+		    	console.log(produse_in_cos);
+		    	
+		    });
+		   
+
+		    
 		});
 	</script>
 </body>

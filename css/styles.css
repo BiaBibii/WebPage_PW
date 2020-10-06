@@ -40,12 +40,12 @@ div.col {
 div#produse{
   padding: 10px;
 }
-div.card {
+div.produs {
   margin-bottom: 20px;
   text-align: center;
   background: white;
 }
-div.card img {
+div.produs img {
   margin: 0 auto;
   padding: 10px;
 }
