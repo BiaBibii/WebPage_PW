@@ -116,7 +116,7 @@
                     <img src="images/ceapa_rosie.jpg" alt="ceapa_rosie" style="width:70%">
                     <h4>Ceapa rosie</h4>
                     <p class="Preț">7 lei/kg</p>
-                    <p><button>Adaugă în coș</button></p>
+                    <p><button class="addToCart">Adaugă în coș</button></p>
                 </div>
             </div>
             <div class="col">
@@ -162,14 +162,18 @@
 		$(document).ready(function(){
 		//alert("dsfg");
 		var produse_in_cos=[];
-
 		    $("button.addToCart").on("click",function(){
+		    	
+		    	alert("ai adaugat un produs in cos");
 		    	var selected=$(this).parent().parent().attr("data-cod-produs");
 		    	produse_in_cos.push(selected);//adaug produsele in lista pentru cos
 		    	console.log(produse_in_cos);
 		    	
+		    	
 		    });
-		   
+		    
+		    
+
 
 		    
 		});
